@@ -1,0 +1,60 @@
+
+:root{
+    --background-menu: #1F1F1F;
+    --verde: #01B574;
+    --branco: #F4F4F4;
+
+    --font1: 'Tajawal', sans-serif;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+label {
+    margin-top: 1.5%;
+    margin-right: 3%;
+    position: relative ;
+    width: 120px ;
+    height: 70px;
+    cursor: pointer;
+}
+
+label input {
+    position: relative;
+    z-index: 1;
+    appearance: none;
+}
+
+label span {
+    position: absolute;
+    left: 70px;
+    width: 40px;
+    height: 23px;
+    background:var(--verde);
+    border-radius: 80px;
+    transition: 0,5s;
+}
+
+label input:checked ~ span{
+    background: #CF4B83;
+}
+
+label span i {
+    transition: 0,5s;
+    top: 3.8px;
+    left: 2px;
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+}
+
+label input:checked ~ span i {
+    left: 18px;
+    background: #393939;
+}

@@ -1,0 +1,68 @@
+:root {
+    --branco: #f4f4f4;
+    --verde: #01b574;
+    --cinza: #8f8f8f;
+    --rosa: #cf4b83;
+    --verdeclaro: rgba(1, 181, 116, 0.1);
+}
+
+.cabecalho {
+    width: 100vw;
+    height: 80px;
+    margin: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.cabecalho img {
+    width: 5%;
+    margin-left: 3%;
+}
+
+label {
+    margin-top: 5%;
+    position: relative;
+    width: 120px;
+    height: 70px;
+    cursor: pointer;    
+    margin-right: 3%;    
+}
+
+label input {
+    position: relative;
+    z-index: 1;
+    appearance: none;
+}
+
+label span {
+    position: absolute;
+    left: 70px;
+    width: 40px;
+    height: 23px;
+    background: green;
+    border-radius: 80px;
+    transition: 0, 5s;
+}
+
+label input:checked~span {
+    background: #CF4B83;
+}
+
+label span i {
+    transition: 0, 5s;
+    top: 3.8px;
+    left: 2px;
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+}
+
+label input:checked~span i {
+    left: 18px;
+    background: #393939;
+}

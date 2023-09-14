@@ -1,0 +1,161 @@
+:root {
+    --branco: #f4f4f4;
+    --verde: #01b574;
+    --cinza: #8f8f8f;
+    --rosa: #cf4b83;
+    --verdeclaro: rgba(1, 181, 116, 0.1);
+}
+
+body {
+    background-image: url(../../assets/img/Background1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+main {
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todaBosta{
+    width: 100vw;
+    display: flex;
+}
+
+.esquerdinha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.pagina_esquerda {
+    background: linear-gradient(150deg, rgba(255, 255, 255, 0.356) 100%, rgba(255, 255, 255, 0.117) 10%);
+    backdrop-filter: blur(10px);
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 60%;
+    height: 80%;
+    justify-content: center;
+    box-shadow: 2px 2px 70px rgb(0, 0, 0);
+}
+
+
+.ladoDireito {
+    display: flex;
+    align-items: end;
+    width: 50%;
+}
+
+.pagina_direita {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.pagina_direita p {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10%;
+    margin-top: -1%;
+
+}
+
+.pagina_direita img {
+    width: 55%;
+    margin-top: -4%;
+}
+
+
+
+@media screen and (max-width: 1180px) {
+    .cabecalho {
+        height: 58px;
+    }
+
+    .pagina_direita p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 685px) {
+
+
+    .esquerdinha {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .ladoDireito {
+        width: 100%;
+
+    }
+
+    .pagina_direita {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+
+
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: auto;
+        
+    }
+
+    .todaBosta{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    main {
+        flex-direction: column;
+        display: flex;
+        margin: 0 auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .pagina_direita img {
+        width: 75%;
+    }
+
+    .cabecalho img {
+        width: 15%;
+    }
+
+    .texto {
+        font-size: smaller;
+    }
+}
+
+
+@media screen and (max-width: 684px) {
+    .cabecalho img {
+        width: 10%;
+    }
+
+}
+
+@media screen and (max-width: 685px) {
+    body{
+        background-image: url(../../assets/img/Background2.png);
+    }
+    
+}
